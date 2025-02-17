@@ -21,24 +21,24 @@
         </div>
         <!-- Pole email -->
           <div class="div-username">
-            <input class="input-emial" type="email" placeholder="Email">
+            <input class="input-emial" type="email" placeholder="Email" id="email">
             <i class='bx bxs-envelope'></i>
         </div>
 
         <!-- Pole haslo -->
         <div class="div-password">
-            <input class="input-pasword" type="password" placeholder="Password">
+            <input class="input-pasword" type="password" placeholder="Password" id="password">
             <i class='bx bxs-lock-alt'></i>
         </div>
 
          <!-- Pole haslo -->
          <div class="div-password">
-            <input class="input-pasword" type="password" placeholder="Repet password">
+            <input class="input-pasword" type="password" placeholder="Repet password" id="repPassword">
             <i class='bx bxs-lock-alt'></i>
         </div>
         <!-- Pole Login button -->
         <div class="div-button">
-            <button class="login-button"> Register </button>
+            <button class="login-button" id="RegButton"> Register </button>
         </div>
 
         <div class="div-text">
@@ -48,6 +48,42 @@
     
     <script>
         
+        document.getElementById('RegButton').addEventListener('click', function () {
+            let isEmailCorrect = checkEmail('email');
+            let isPasswordCorrect = checkPassword('password', 'repPassword');
+    
+            if (isPasswordCorrect && isEmailCorrect) {
+                window.location.href = "login.html";
+            } else {
+                console.log("Rejestracja nie powiodła się. Sprawdź swoje dane.");
+            }
+        });
+    
+        function checkPassword(passwordId, repPasswordId) {
+            const passwordInput = document.getElementById(passwordId).value;
+            const passwordRepeated = document.getElementById(repPasswordId).value;
+    
+            if (passwordInput !== passwordRepeated) {
+                console.log("Hasła nie są takie same");
+                return false;
+            } else {
+                console.log("Hasła są poprawne");
+                return true;
+            }
+        }
+    
+        function checkEmail(emailId) {
+            const emailInput = document.getElementById(emailId).value;
+            const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+            if (!emailFormat.test(emailInput)) {
+                console.log("Nieprawidłowy email");
+                return false;
+            } else {
+                console.log("Email jest poprawny");
+                return true;
+            }
+        }
     </script>
-</body>
+    </body>
 </html>
