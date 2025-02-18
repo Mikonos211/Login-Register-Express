@@ -1,0 +1,117 @@
+body{
+    background-image: url(6213932.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border-color: #162938;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Login-paragraf{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.div-username, .div-password {
+    position: relative;
+}
+
+.input-pasword, .input-user, .input-emial {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-color: #162938;
+    text-indent: 10px; 
+    width: 90%; 
+    height: 40px; 
+    padding: 5px 10px; 
+    border-radius: 25px;
+    border: 1px solid black;
+    box-sizing: border-box; 
+    margin: 5px auto;
+    display: block; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-username i, .div-password i {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #162938;
+}
+
+
+.div-rememer-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-remember{
+    display: inline-block;
+    margin: 0 ;
+    accent-color: #162938;
+
+}
+.remember-paragraf , .Forgot-pasword {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+}
+
+.Forgot-pasword{
+    margin-left: 60px;
+}
+
+.login-button{
+    width: 90%;
+    height: 40px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #162938;
+    color: white;
+    backdrop-filter: blur(10px);
+
+}
+
+.Register-paragfar{
+    font-size: 12px;
+}
