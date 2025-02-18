@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form action="/register" method="post">
+        <div class="main">
+            <!-- Napis Login -->
+            <div class="div-login">
+                <p class="Login-paragraf">Register</p>
+            </div>
+    
+            <!-- Pole username -->
+            <div class="div-username">
+                <input class="input-user" type="text" placeholder="Username">
+                <i class='bx bxs-user'></i>
+            </div>
+            <!-- Pole email -->
+              <div class="div-username">
+                <input class="input-emial" type="email" placeholder="Email" id="email">
+                <i class='bx bxs-envelope'></i>
+            </div>
+                <!-- <p id="error-massage-email"> Email nie jest poprawny</p> -->
+    
+    
+            <!-- Pole haslo -->
+            <div class="div-password">
+                <input class="input-pasword" type="password" placeholder="Password" id="password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+    
+             <!-- Pole powtorz haslo -->
+             <div class="div-password">
+                <input class="input-pasword" type="password" placeholder="Repet password" id="repPassword">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+                <!-- <p id="error-massage-password"> Hasla nie sa identyczne </p> -->
+    
+            <!-- Pole Login button -->
+            <div class="div-button">
+                <button class="login-button" id="RegButton"> Register </button>
+            </div>
+    
+            <div class="div-text">
+                <p class="Register-paragfar">Alredy have an account? <a href="login">Login</a></p>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
